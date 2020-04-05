@@ -54,11 +54,15 @@ img {
 }
 
 .artiste {
-    font-size: 1.5em;
+    font-size: 1.5em bold;
     color: #333;
 }
 
 .titre {
     margin: 5px 0;
+    font-size: 1em bold;
     color: rgba(149, 165, 166, 1.0);
 }
+
+
+/* JE TRY UN PLAYER */

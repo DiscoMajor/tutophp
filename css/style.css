@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -7,9 +9,21 @@ ul {
     list-style-type: none;
 }
 
+a:visited {
+    color: crimson;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
 #horizon li {
     display: inline;
     padding: 50px;
+}
+
+#horizon {
+    font-family: 'Oswald', sans-serif;
 }
 
 .nav_header {
@@ -82,7 +96,7 @@ ul {
 
 #article_2 {
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
     color: white;
     width: 700px;
     height: 215px;
@@ -91,7 +105,7 @@ ul {
 
 #article_3 {
     font-weight: bold;
-    text-align: center;
+    text-align: justify;
     color: white;
     width: 700px;
     height: 215px;
@@ -102,6 +116,13 @@ ul {
     color: white;
     text-align: center;
     background-color: #e69c91;
+    font-family: 'Chivo', sans-serif;
+    ;
+}
+
+#p_exclusive {
+    font-size: 30px;
+    text-align: center;
 }
 
 .section2 {
@@ -109,3 +130,9 @@ ul {
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+.cash_banner {
+    position: relative;
+}
+
+.section3 {}

@@ -77,8 +77,8 @@ a:hover {
 
 .first_sec {
     border-bottom: solid #8c8f88 0.2em;
-    background: linear-gradient(#5d5e5b, #8c8f88, #9a9e97);
-    color: white;
+    color: black;
+    background-color: #d4cdbc;
 }
 
 #article_1 {
@@ -97,7 +97,7 @@ a:hover {
 #article_2 {
     font-weight: bold;
     text-align: justify;
-    color: white;
+    color: black;
     width: 700px;
     height: 215px;
     margin-left: 10px;
@@ -106,7 +106,7 @@ a:hover {
 #article_3 {
     font-weight: bold;
     text-align: justify;
-    color: white;
+    color: black;
     width: 700px;
     height: 215px;
     margin-right: 10px;
@@ -123,16 +123,16 @@ a:hover {
 #p_exclusive {
     font-size: 30px;
     text-align: center;
+    font-family: 'Chivo', sans-serif;
 }
 
 .section2 {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: -600px;
 }
 
-.cash_banner {
-    position: relative;
+.section3 {
+    margin-top: 75px;
 }
-
-.section3 {}

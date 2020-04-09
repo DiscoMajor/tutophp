@@ -150,9 +150,7 @@ p {
 #drumkit_background {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    align-items: center;
-    position: relative;
+    position: absolute;
 }
 
 #drumkit_imgs {
@@ -160,23 +158,38 @@ p {
     flex-direction: row;
     align-content: space-around;
     justify-content: space-evenly;
-}
-
-#drumkit_package {
-    position: sticky;
+    position: relative;
     width: 100%;
     left: 0;
+    margin-top: 50px;
+}
+
+#drumkit_contain {
+    position: sticky;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    font-family: 'Chivo', sans-serif;
+    width: 500px;
 }
 
 .container_footer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     background: linear-gradient(#e3e3e3, #c9c5c5);
     border: solid 0.1em black;
+    margin-top: 40px;
+    align-items: center;
 }
 
 .social_footer {
     display: flex;
     flex-direction: row;
+    padding-left: 45px;
+}
+
+#social_img {
+    display: flex;
+    border-right-width: 60px;
 }

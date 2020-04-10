@@ -41,7 +41,7 @@ a:hover {
     justify-content: space-between;
     margin-bottom: 10px;
     background: linear-gradient(#e3e3e3, #c9c5c5);
-    border: solid 0.1em black;
+    border: solid 0.1em #c9c5c5;
 }
 
 .container_sections {
@@ -51,20 +51,17 @@ a:hover {
 .container_banner {
     display: flex;
     flex-direction: column;
-    border-bottom: 0.1em solid black;
-    border-top: 0.1em solid black;
+    border: solid 0.1em black;
 }
 
 .ban_logo {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
     align-items: center;
 }
 
 .first_sec {
-    border-bottom: solid #8c8f88 0.1em;
     color: black;
     background: linear-gradient(#e3e3e3, #c9c5c5);
 }
@@ -72,32 +69,34 @@ a:hover {
 #article_1 {
     font-weight: bold;
     text-align: justify;
-    border-top: solid #8c8f88 0.1em;
     padding-top: 15px;
+    width: 1835px;
+    padding-left: 28px;
 }
 
 .article_flex {
     display: flex;
     justify-content: space-between;
     height: 200px;
+    padding-left: 18px;
+    padding-right: 18px;
+    margin-top: -25px;
 }
 
 #article_2 {
     font-weight: bold;
     text-align: justify;
-    color: black;
-    width: 700px;
-    height: 215px;
+    width: 662px;
     margin-left: 10px;
+    color: brown;
 }
 
 #article_3 {
     font-weight: bold;
     text-align: justify;
-    color: black;
-    width: 700px;
-    height: 215px;
+    width: 662px;
     margin-right: 10px;
+    color: brown;
 }
 
 #titre_h2 {
@@ -105,7 +104,6 @@ a:hover {
     text-align: center;
     background-color: #e69c91;
     font-family: 'Chivo', sans-serif;
-    ;
 }
 
 #p_exclusive {
@@ -147,6 +145,8 @@ p {
     color: brown;
 }
 
+.drumkit_div {}
+
 #drumkit_background {
     display: flex;
     flex-direction: row;
@@ -178,7 +178,7 @@ p {
     flex-direction: row-reverse;
     justify-content: space-between;
     background: linear-gradient(#e3e3e3, #c9c5c5);
-    border: solid 0.1em black;
+    border: solid 0.1em #c9c5c5;
     margin-top: 40px;
     align-items: center;
 }
@@ -187,9 +187,12 @@ p {
     display: flex;
     flex-direction: row;
     padding-left: 45px;
+    border-right-width: 60px;
 }
 
-#social_img {
-    display: flex;
-    border-right-width: 60px;
+.imgfooter_margin {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 5px;
 }

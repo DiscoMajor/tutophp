@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@700&display=swap');
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a:visited {
+    color: green;
+}
+
+a:hover {
+    color: whitesmoke;
+}
+
+#horizon li {
+    display: inline;
+    padding: 50px;
+}
+
+#horizon {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* HEADER */
+
+.nav_header {
+    margin-top: 25px;
+}
+
+.frog_header {
+    display: block;
+    padding-left: 10px;
+}
+
+.container_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background: linear-gradient(#e3e3e3, #c9c5c5);
+    border: solid 0.1em #c9c5c5;
+}
+
+#search {
+    display: flex;
+    justify-content: end;
+    padding-right: 48px;
+}
+
+#idmdp {
+    display: table-caption;
+    margin: 10px;
+}
+
+.id_mdp {
+    position: absolute;
+    padding-left: 150px
+}
+
+
+/* Autres */
+
+#titre_h2 {
+    color: white;
+    text-align: center;
+    background-color: #e69c91;
+    font-family: 'Chivo', sans-serif;
+}
+
+p {
+    color: brown;
+}
+
+
+/* PREMIERE SECTION */
+
+td {
+    border: solid 0.1em black;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+#tableur_ect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* PLAYER SON ET VIDEO  */
+
+#players {
+    display: flex;
+    justify-content: space-around;
+}
+
+#mp3_player {
+    display: inline-table;
+}
+
+#video_player {
+    align-self: center;
+}
+
+
+/* FOOTER  */
+
+.container_footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    background: linear-gradient(#e3e3e3, #c9c5c5);
+    border: solid 0.1em #c9c5c5;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.social_footer {
+    display: flex;
+    flex-direction: row;
+    padding-left: 45px;
+    border-right-width: 60px;
+}
+
+.imgfooter_margin {
+    margin: 0;
+    padding: 0;
+    display: block;
+    padding: 5px;
+}

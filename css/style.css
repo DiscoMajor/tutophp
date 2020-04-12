@@ -26,8 +26,11 @@ a:hover {
     font-family: 'Oswald', sans-serif;
 }
 
+
+/* HEADER */
+
 .nav_header {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .frog_header {
@@ -43,6 +46,27 @@ a:hover {
     background: linear-gradient(#e3e3e3, #c9c5c5);
     border: solid 0.1em #c9c5c5;
 }
+
+#search {
+    display: flex;
+    justify-content: end;
+    padding-right: 48px;
+    -webkit-transition: width 0.5s ease-in-out;
+    transition: width 0.5s ease-in-out;
+}
+
+#idmdp {
+    display: table-caption;
+    margin: 10px;
+}
+
+.id_mdp {
+    position: absolute;
+    padding-left: 150px
+}
+
+
+/* SECTION 1 */
 
 .container_sections {
     margin-top: 15px;

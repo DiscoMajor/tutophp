@@ -7,7 +7,6 @@
                 <form action="formulaire.php" method="POST" id="idmdp">
                     <input type="text" name="Pseudo" placeholder="Pseudo" maxlength="10" id="idmdp">
                     <input type="password" name="password" placeholder="Password" maxlength="15" id="idmdp">
-                <input type="submit"> 
                 </form> 
             </div>
 

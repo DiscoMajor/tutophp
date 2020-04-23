@@ -12,51 +12,32 @@
 
     <?php include ("header.php");?>
     
-    <!-- PREMIERE SECTION -->
-
-    <h2 id="titre_h2">TRY TRY TRY</h2>
-
-<?php
-    if (isset ($_POST['password']) AND $_POST['password'] == "chacal")
-{
-?>
-<p> Vous avez le bon MDP voici les codes : 465465654654</p>
-<?php
-}
-    else 
-{
-    echo '<p>Désolé vous avez échoué</p>';
-}
-?>
-
-<p>--------------------------------------------------------------</p>
-<p>--------------------------------------------------------------</p>
-<p>--------------------------------------------------------------</p>
-<p>--------------------------------------------------------------</p>
-
 
     <!-- RECUP MOT DE PASSE-->
     <h2 id="titre_h2">MOT DE PASSE</h2>
 
-<?php 
+<?php
 
 $erreur = '';
 
-if (!empty ($_POST['email']) AND !empty($_POST['password'])) {
-    $email= htmlspecialchars($_POST['email']);
+if (!empty ($_POST['password']) AND !empty ($_POST['pseudo']) AND !empty ($_POST['email'])) {
     $password = htmlspecialchars ($_POST['password']);
+    $pseudo = htmlspecialchars ($_POST['pseudo']);
+    $email = htmlspecialchars ($_POST['email']);
 } else {
-    $erreur = 'C\'est mort frere';
+    $erreur = 'Veuillez remplir le formulaire';
 }
 ?>
 
-<?php if($erreur) { ?> 
-<p style="color:red"> <?= $erreur ?> </p>
+<?php if ($erreur) { ?>
+<p style='color:red'> <?= $erreur ?> </p>
 <?php } else { ?>
-    <p>Vous êtes connecté avec l'email <?= $email ?> et le mot de passe <?= $password ?></p>
+    <p>Vous êtes connecté avec le pseudo, <?=$pseudo?> , le mot de passe <?=$password?>  et avec cet email <?=$email?></p>
 <?php } ?>
 
-<a href="/"> Back à l'accceuil</a>
+
+
+<a href="/"> Back à l'acceuil</a>
 
 
 </body>

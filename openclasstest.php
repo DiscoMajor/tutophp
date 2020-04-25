@@ -23,21 +23,21 @@
 <br>
 <br>
 
-<?php
-
-    if (isset ($_POST['password']) AND ($_POST['password']) == "salut")
-{
-?>
-<p>Voici les codes 4646464654654444</p>
-
+<?php 
+    if (isset ($_POST['password']) AND ($_POST['password']) == "hola")
+     {
+        ?>
+        <p>Bien vu, vous avez accés à ce site</p>
+        
 <?php } else {
-    echo  'MAUVAIS MOT DE PASSE ENTRE';
-}
-?>
 
-<br>
+     echo '<p>Veuillez sortir d\'ici</p>';
+
+} ?>
 
 
+
+    <br>
 
 <a href="/"> Back à l'acceuil</a>
 

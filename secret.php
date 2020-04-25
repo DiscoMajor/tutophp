@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -14,6 +15,7 @@
     
 
     <!-- RECUP MOT DE PASSE-->
+    
     <h2 id="titre_h2">MOT DE PASSE</h2>
 
 <?php
@@ -34,10 +36,6 @@ if (!empty ($_POST['password']) AND !empty ($_POST['pseudo']) AND !empty ($_POST
 <?php } else { ?>
     <p>Vous êtes connecté avec le pseudo, <?=$pseudo?> , le mot de passe <?=$password?>  et avec cet email <?=$email?></p>
 <?php } ?>
-
-
-
-<a href="/"> Back à l'acceuil</a>
 
 
 </body>

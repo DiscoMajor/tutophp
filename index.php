@@ -46,13 +46,14 @@
 <br>
 <br>
 
-<p>Veuillez saisir le mot de passe secret que vous avez reçu</p>
+<p>Veuillez saisir le mot de passe secret que vous avez reçu ainsi que le prénom</p>
 
 <br>
 
 <form method="POST" action="openclasstest.php">
-
+    <input type="text" name="prenom" placeholder= "Prenom" required>
     <input type="password" name="password" placeholder="Mot de passe" required >
+    <input type="email" name="email" placeholder="Email" required>
     <input type="submit">
 
 </form>
@@ -70,10 +71,9 @@ $adulte = false;
 ?>
 
 <?php
-echo
-"<p style=color:blue> Salut mon prénom est $prenom et je suis de sexe $sexe et je suis agé de $age ans <p>";
-echo
-"<p style=color:green> J'ai acheté pour $total $ de fruits et légumes, c'est fou mais j'ai eu une réduc d'au moins $prix $ ! <p>";
+echo "<p style=color:blue> Salut mon prénom est $prenom et je suis de sexe $sexe et je suis agé de $age ans <p>";
+
+echo "<p style=color:green> J'ai acheté pour $total $ de fruits et légumes, c'est fou mais j'ai eu une réduc d'au moins $prix $ ! <p>";
 ?>
 
 <br>
@@ -103,6 +103,20 @@ else
     echo "Tu es un escroc, tu n'es pas Stéphane !";
 }
 ?>
+
+<br>
+<br>
+
+<?php
+function Bonjour($nom) 
+{
+echo '<p>Salut à toi ma moula ' .$nom. ' c\'est léger de te voir ici</p>';
+}
+?>
+
+<?= Bonjour('Pascal')?>
+<?= Bonjour('EDOUARD')?>
+<?= Bonjour('Natacha')?>
 
 
 

@@ -21,23 +21,28 @@
         <h2 id="titre_h2">MOT DE PASSE</h2>
 
 <br>
-<br>
 
-<?php 
-    if (isset ($_POST['password']) AND ($_POST['password']) == "hola")
-     {
-        ?>
-        <p>Bien vu, vous avez accés à ce site</p>
-        
-<?php } else {
+<?php
 
-     echo '<p>Veuillez sortir d\'ici</p>';
+$erreur = '';
 
+if (!empty ($_POST['password']) AND ($_POST['password']) == "yo" AND !empty($_POST['prenom']) AND ($_POST['prenom']) == "jacky" AND !empty ($_POST['email'])){
+        $prenom = htmlspecialchars ($_POST['prenom']);
+        $email = htmlspecialchars ($_POST['email']);
+        $password = htmlspecialchars ($_POST['password']);
+} else {
+    $erreur = "Accés au site refusé, veuillez quitter cet endroit";
 } ?>
 
+<?php 
+if ($erreur){ ?>
+    <?= $erreur ?>
+<?php } else {  ?>
+<p>Vous vous êtes connecté avec le mail <?=$email?> et le prenom <?=$prenom?> vous avez donc accés aux codes 7695-17416712-73167-212</p>
+<?php } ?> 
 
 
-    <br>
+<br>
 
 <a href="/"> Back à l'acceuil</a>
 
